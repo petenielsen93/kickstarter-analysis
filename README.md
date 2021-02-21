@@ -19,13 +19,13 @@
     
 - After breaking down the successful, failed, and cancelled theater productions by month, and visualizing the data using a line chart, we were able to discover that the timing of the launch date of these campaigns has a significant impact on their success. Campaigns that launched in the month of May were the most successful, with the months June, July, August and April respectively being the next best months.  It appears that when these campaigns begin in the summer, they are more likely to end up successful. As to why this is so, further analysis is needed. As to the failed and cancelled theater productions, there was no significant timing that contributed to its failure or cancelation. See the chart below for more. 
 
-![Outcomes based on Launch Dates](Pictures/Theater_Outcomes_vs_Launch.png)
+![Outcomes based on Launch Dates](kickstarter-analysis/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
     
 - In this part, we wanted to gather data on the amount and percentage of Successful, Failed, and Cancelled campaigns and compare them with their financial goals. To analyze the outcomes based on goals, we first broke down the campaign goal amounts into ranges, with the first range being campaigns who's goal was less that $1000. The next range was equal to or greater than $1000 to $4999, equal to or greater than $5000 to $9999, and continued in that pattern until reaching the final range of greater than $50,000. We then developed a COUNTIFS function to find the specific type of outcome we desired: the outcome of the Kickstarter campaign, the amount of the campaign goal, and the subcategory "play". This allowed us to calculate the number of Successful, Failed, and Cancelled campaigns for plays and categorize them into our goal ranges. We could then calculate the percentage of each campaign outcome for the goal range, and we used that info to create the below chart. 
 
-![Outcomes based on Goals](Pictures/Outcomes_vs_Goals.png)
+![Outcomes based on Goals](kickstarter-analysis/Outcomes_vs_Goals.png)
 
 - This took a bit more analysis than the launch dates. It makes sense that the smaller the goal amount, the more likely it is to be successful. Around the $15,000 - $19,999 range, is where the failures become more common than the successes. However, from the $35,000 - $39,999 to the $40,000 - $44,999 range, the successes begin to outweigh the failures again. The failures take over for the rest of the ranges. Looking back at the raw data on my Excel sheet, I can see that for the $35,000 - $39,999 range, there was a total of 6 campaigns, with 4 successes. In the $40,000 - $44,999 range, there are three total campaigns with two of them being successful. Due to the small number of plays in these higher ranges, the successful campaigns should be considered outliers. There are a total number of 1047 projects in this data set, with 985 of the campaigns having a goal less than $20,000. Any successful campaign with a goal of more than $20,000 should be considered an outlier.
 
